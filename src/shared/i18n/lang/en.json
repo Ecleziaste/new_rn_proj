@@ -1,0 +1,50 @@
+{
+  "en": {
+    "translation": {
+      "languages": {
+        "en": "English",
+        "ru": "Russian"
+      },
+      "processes": {
+        "navigation": {
+          "tabBar": {}
+        }
+      },
+      "screens": {
+        "posts": {},
+        "common": {
+          "no-content": "Nothing to show"
+        }
+      },
+      "widgets": {
+        "sign-up-form": {
+          "header": "Please register",
+          "email": "Enter e-mail",
+          "password": "Enter password",
+          "confirm-button": "Confirm"
+        }
+      },
+      "features": {
+        "sign-up": {
+        }
+      },
+      "entities": {},
+      "ui": {
+        "loaders": {
+          "boot": {
+            "text": "Please wait..."
+          }
+        }
+      },
+      "utils": {},
+      "errors": {
+        "unknown-error-reload": "Something went wrong. The app will be reload.",
+        "unknownError": "Something went wrong. Please try again.",
+        "refreshTokenError": "Network error",
+        "supportDescription": "Please contact the Service Provider for more Information."
+      },
+      "validation": {},
+      "common": {}
+    }
+  }
+}

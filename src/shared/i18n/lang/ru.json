@@ -1,0 +1,50 @@
+{
+  "ru": {
+    "translation": {
+      "languages": {
+        "en": "Английский",
+        "ru": "Русский"
+      },
+      "processes": {
+        "navigation": {
+          "tabBar": {}
+        }
+      },
+      "screens": {
+        "posts": {},
+        "common": {
+          "no-content": "Нет данных"
+        }
+      },
+      "widgets": {
+        "sign-up-form": {
+          "header": "Пожалуйста, зарегистрируйтесь",
+          "email": "Введите почту",
+          "password": "Введите пароль",
+          "confirm-button": "Подтвердить"
+        }
+      },
+      "features": {
+        "sign-up": {
+        }
+      },
+      "entities": {},
+      "ui": {
+        "loaders": {
+          "boot": {
+            "text": "Пожалуйста, ждите..."
+          }
+        }
+      },
+      "utils": {},
+      "errors": {
+        "unknown-error-reload": "Что-то пошло не так. Приложение будет перезапущено.",
+        "unknownError": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз",
+        "refreshTokenError": "Ошибка сети",
+        "supportDescription": "Пожалуйста, свяжитесь с владельцами сервиса для получения информации"
+      },
+      "validation": {},
+      "common": {}
+    }
+  }
+}

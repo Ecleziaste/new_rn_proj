@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["src/assets/svgs/*", "node_modules", "test", "dist", "**/*spec.ts", "**/*generated.ts"]
+}

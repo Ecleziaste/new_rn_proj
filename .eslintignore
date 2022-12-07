@@ -1,0 +1,3 @@
+src/shared/api/generated/**
+src/shared/ui/icons
+node-modules/**
