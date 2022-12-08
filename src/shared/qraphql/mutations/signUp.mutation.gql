@@ -1,0 +1,23 @@
+mutation Mutation($input: SignUpRequest!) {
+  userSignUp(input: $input) {
+    problem {
+      message
+    }
+    token
+    user {
+      avatarUrl
+      birthDate
+      country
+      createdAt
+      deletedAt
+      email
+      firstName
+      gender
+      id
+      lastName
+      middleName
+      phone
+      updatedAt
+    }
+  }
+}

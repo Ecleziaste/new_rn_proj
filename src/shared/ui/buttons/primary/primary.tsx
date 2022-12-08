@@ -1,4 +1,4 @@
-import React, {ForwardedRef, ReactNode, forwardRef, useState} from 'react';
+import React, {ForwardedRef, forwardRef, ReactNode, useState} from 'react';
 import {
   ActivityIndicator,
   GestureResponderEvent,
@@ -10,7 +10,7 @@ import {
   View,
 } from 'react-native';
 import {PARALLAX_DISABLE} from 'src/shared/constants';
-import {colors} from 'src/shared/styles';
+import {theme} from 'src/shared/styles';
 
 import {styles} from './primary.styles';
 
@@ -67,7 +67,10 @@ export const PrimaryButton = forwardRef(
           style,
         ]}>
         {isLoading ? (
-          <ActivityIndicator size="small" color={colors.primary.white} />
+          <ActivityIndicator
+            size="small"
+            color={theme.default.colors.primary.white}
+          />
         ) : (
           <View style={styles.innerWrap}>
             {icon && <View style={styles.iconContainer}>{icon}</View>}
@@ -94,7 +97,10 @@ export const PrimaryButton = forwardRef(
         onBlur={handleBlur}
         onPress={handlePress}>
         {isLoading ? (
-          <ActivityIndicator size="small" color={colors.primary.white} />
+          <ActivityIndicator
+            size="small"
+            color={theme.default.colors.primary.white}
+          />
         ) : (
           <View style={styles.innerWrap}>
             {icon && <View style={styles.iconContainer}>{icon}</View>}

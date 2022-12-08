@@ -7,6 +7,8 @@ import React from 'react';
 import {LogBox} from 'react-native';
 
 import * as Providers from './providers';
+import {ApolloProvider} from '@apollo/client';
+import client from 'src/0_app/apollo/client';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare const global: {HermesInternal: null | {}};
@@ -22,11 +24,16 @@ if (__DEV__) {
 
 const App = () => {
   return (
-    <Providers.Redux>
-      <Providers.I18nProvider>
-        <Navigation.MainStackNavigator />
-      </Providers.I18nProvider>
-    </Providers.Redux>
+    //TODO:
+    // <ThemeProvider value={theme.default}>
+    <ApolloProvider client={client}>
+      <Providers.Redux>
+        <Providers.I18nProvider>
+          <Navigation.MainStackNavigator />
+        </Providers.I18nProvider>
+      </Providers.Redux>
+    </ApolloProvider>
+    // </ThemeProvider>
   );
 };
 

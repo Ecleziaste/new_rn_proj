@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {colors, typography} from 'src/shared/styles';
+import {theme, typography} from 'src/shared/styles';
 import {normalizeToScreenSize} from 'src/shared/utils';
 
 export const styles = StyleSheet.create({
@@ -8,25 +8,25 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
     height: normalizeToScreenSize(82),
-    backgroundColor: colors.primary.white,
+    backgroundColor: theme.default.colors.primary.white,
     borderRadius: normalizeToScreenSize(16),
   },
   rootFocused: {
     borderWidth: normalizeToScreenSize(4),
-    borderColor: colors.primary.red,
-    ...colors.shadow,
+    borderColor: theme.default.colors.primary.red,
+    ...theme.default.colors.shadow,
   },
   rootDisabled: {
     borderWidth: normalizeToScreenSize(4),
-    borderColor: colors.grayscale.dark,
-    backgroundColor: colors.grayscale.dark,
+    borderColor: theme.default.colors.grayscale.dark,
+    backgroundColor: theme.default.colors.grayscale.dark,
   },
   text: {
-    color: colors.primary.red,
+    color: theme.default.colors.primary.red,
     ...typography.title2_32,
   },
   textDisabled: {
-    color: colors.secondary.grayPurple,
+    color: theme.default.colors.secondary.grayPurple,
   },
   innerWrap: {
     flexDirection: 'row',

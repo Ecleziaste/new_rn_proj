@@ -67,7 +67,12 @@ buck-out/
 src/shared/api/generated
 src/shared/api/generated.json
 
+# gql
+__generated__
+schema.graphql
+
 # other
 .env
 src/rn-tester
+.vscode
 

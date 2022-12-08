@@ -9,10 +9,10 @@ import {
   View,
 } from 'react-native';
 import {PARALLAX_DISABLE} from 'src/shared/constants';
-import {colors} from 'src/shared/styles';
 import {mergeRefs, normalizeToScreenSize} from 'src/shared/utils';
 
 import {styles} from './base-input.styles';
+import {theme} from 'src/shared/styles';
 
 export type BaseInputProps = Omit<TextInputProps, 'onFocus' | 'onBlur'> & {
   label?: string;
@@ -87,11 +87,11 @@ export const BaseInput = React.forwardRef(
             <TextInput
               {...props}
               style={[styles.input, isFocused && styles.inputFocused]}
-              selectionColor={colors.secondary.grayPurple}
+              selectionColor={theme.default.colors.secondary.grayPurple}
               placeholderTextColor={
                 isFocused
-                  ? colors.secondary.lightPurple
-                  : colors.secondary.grayPurple
+                  ? theme.default.colors.secondary.lightPurple
+                  : theme.default.colors.secondary.grayPurple
               }
               value={value}
               onChangeText={onChangeText}

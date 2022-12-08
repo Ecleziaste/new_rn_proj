@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {IS_IOS} from 'src/shared/constants';
-import {colors, typography} from 'src/shared/styles';
+import {theme, typography} from 'src/shared/styles';
 import {normalizeToScreenSize} from 'src/shared/utils/normalize-to-screen-size';
 
 export const styles = StyleSheet.create({
@@ -14,18 +14,18 @@ export const styles = StyleSheet.create({
     borderRadius: normalizeToScreenSize(50),
     borderWidth: normalizeToScreenSize(4),
     borderColor: '#0000',
-    backgroundColor: colors.grayscale.dark,
+    backgroundColor: theme.default.colors.grayscale.dark,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   inputWrapperFocused: {
-    borderColor: colors.secondary.lightPurple,
-    backgroundColor: colors.primary.dark,
-    ...colors.shadow,
+    borderColor: theme.default.colors.secondary.lightPurple,
+    backgroundColor: theme.default.colors.primary.dark,
+    ...theme.default.colors.shadow,
   },
   inputWrapperWithError: {
-    borderColor: colors.primary.red,
+    borderColor: theme.default.colors.primary.red,
     borderWidth: normalizeToScreenSize(1),
   },
   touchableInputWrapper: {
@@ -36,25 +36,25 @@ export const styles = StyleSheet.create({
   input: {
     padding: 0,
     backgroundColor: IS_IOS
-      ? colors.grayscale.darkWithOpacity
-      : colors.grayscale.dark,
+      ? theme.default.colors.grayscale.darkWithOpacity
+      : theme.default.colors.grayscale.dark,
     borderRadius: normalizeToScreenSize(12),
-    color: colors.primary.white,
+    color: theme.default.colors.primary.white,
     ...typography.regular3_29_input,
   },
   inputFocused: {
     backgroundColor: IS_IOS
-      ? colors.primary.darkWithOpacity
-      : colors.primary.dark,
+      ? theme.default.colors.primary.darkWithOpacity
+      : theme.default.colors.primary.dark,
   },
   label: {
     marginBottom: normalizeToScreenSize(8),
-    color: colors.secondary.grayPurple,
+    color: theme.default.colors.secondary.grayPurple,
     ...typography.regular2_24,
   },
   error: {
     marginTop: normalizeToScreenSize(8),
-    color: colors.primary.red,
+    color: theme.default.colors.primary.red,
     ...typography.regular2_24,
   },
   iconLeftWrapper: {

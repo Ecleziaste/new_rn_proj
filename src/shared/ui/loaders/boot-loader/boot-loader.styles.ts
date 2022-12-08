@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {colors, typography} from 'src/shared/styles';
+import {theme, typography} from 'src/shared/styles';
 import {normalizeToScreenSize} from 'src/shared/utils';
 
 export const styles = StyleSheet.create({
@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     top: 0,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.primary.dark,
+    backgroundColor: theme.default.colors.primary.dark,
   },
   logoWrapper: {
     width: normalizeToScreenSize(368),
@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
-    color: colors.primary.white,
+    color: theme.default.colors.primary.white,
     ...typography.regular4_32,
   },
 });

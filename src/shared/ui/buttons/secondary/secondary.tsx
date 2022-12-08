@@ -10,9 +10,9 @@ import {
   View,
 } from 'react-native';
 import {PARALLAX_DISABLE} from 'src/shared/constants';
-import {colors} from 'src/shared/styles';
 
 import {styles} from './secondary.styles';
+import {theme} from 'src/shared/styles';
 
 type SecondaryButtonProps = Omit<
   TouchableOpacityProps,
@@ -67,7 +67,10 @@ export const SecondaryButton = forwardRef(
           style,
         ]}>
         {isLoading ? (
-          <ActivityIndicator size="small" color={colors.primary.red} />
+          <ActivityIndicator
+            size="small"
+            color={theme.default.colors.primary.red}
+          />
         ) : (
           <View style={styles.innerWrap}>
             {icon && <View style={styles.iconContainer}>{icon}</View>}
@@ -94,7 +97,10 @@ export const SecondaryButton = forwardRef(
         onBlur={handleBlur}
         onPress={handlePress}>
         {isLoading ? (
-          <ActivityIndicator size="small" color={colors.primary.red} />
+          <ActivityIndicator
+            size="small"
+            color={theme.default.colors.primary.red}
+          />
         ) : (
           <View style={styles.innerWrap}>
             {icon && <View style={styles.iconContainer}>{icon}</View>}

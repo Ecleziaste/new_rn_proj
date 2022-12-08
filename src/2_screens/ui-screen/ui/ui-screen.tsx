@@ -15,8 +15,6 @@ export const UIScreen: FC = () => {
     setTimeout(() => setIsLoading(false), 1000);
   };
 
-  console.log('=>(ui-screen.tsx:19) wtf');
-
   return (
     <Layouts.DefaultLayout
       customStyles={styles.layout}

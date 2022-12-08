@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {colors} from 'src/shared/styles';
 import {normalizeToScreenSize} from 'src/shared/utils';
+import {theme} from 'src/shared/styles';
 
 export const styles = StyleSheet.create({
   root: {
@@ -12,9 +12,9 @@ export const styles = StyleSheet.create({
   },
   rootFocused: {
     borderRadius: normalizeToScreenSize(50),
-    borderColor: colors.secondary.lightPurple,
+    borderColor: theme.default.colors.secondary.lightPurple,
     borderWidth: normalizeToScreenSize(3),
-    backgroundColor: colors.primary.dark,
-    ...colors.shadow,
+    backgroundColor: theme.default.colors.primary.dark,
+    ...theme.default.colors.shadow,
   },
 });

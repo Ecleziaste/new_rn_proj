@@ -1,6 +1,11 @@
-import {light} from './light';
+import {typography} from 'src/shared/styles/typography';
+import {colors} from 'src/shared/styles/themes/dark/colors';
 
-export const defaultTheme = light;
+export const theme = {
+  default: {
+    colors,
+    typography,
+  },
+};
 
-export {light};
-export default defaultTheme;
+export type ThemeType = typeof theme.default;

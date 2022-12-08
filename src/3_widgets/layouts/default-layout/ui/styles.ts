@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {colors} from 'src/shared/styles';
 import {normalizeToScreenSize} from 'src/shared/utils';
+import {theme} from 'src/shared/styles';
 
 export default StyleSheet.create({
   root: {
-    backgroundColor: colors.primary.dark,
+    backgroundColor: theme.default.colors.primary.dark,
     flex: 1,
     flexDirection: 'column',
   },
